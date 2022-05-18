@@ -23,14 +23,16 @@ func TestShowFailure(t *testing.T) {
 	}
 }
 
-
-
 func TestGreetingDefault(t *testing.T) {
 	greeting := CreateGreeting("")
 	if greeting != "Hello, Guest\n" {
 		t.Errorf("Greeting was incorrect, got: %s, want: %s.", greeting, "Hello, Guest\n")
 	}
 }
- 
 
-
+func TestAddPos(t *testing.T) {
+	sum := Add(2, 3)
+	if sum != 5 {
+		t.Errorf("Addition was incorrect, got: %d, want: %d.", sum, 5)
+	}
+}

@@ -26,6 +26,9 @@ func CreateGreeting(name string) string {
 	return "Hello, " + name + "\n"
 }
 
+func Add(x int, y int) int {
+	return x + y
+}
 func main() {
 	// Create Server and Route Handlers
 	r := mux.NewRouter()
